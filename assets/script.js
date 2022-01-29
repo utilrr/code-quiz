@@ -174,7 +174,7 @@ function clearScores() {
 /////
 var questions = [
   {
-    question: "Inside which HTML element do we put the JavaScript?",
+    question: "Inside which HTML element would you put the JavaScript?",
     answers: [
       { text: "javascript", correct: false },
       { text: "script", correct: true },
@@ -185,10 +185,10 @@ var questions = [
   {
     question: "Where is the correct place to insert JavaScript?",
     answers: [
-      { text: "The Head Section", correct: false },
-      { text: "The Body Section", correct: false },
-      { text: "In an External File", correct: false },
-      { text: "All of the Above", correct: true }
+      { text: "The head section", correct: false },
+      { text: "The body section", correct: false },
+      { text: "In an external file", correct: false },
+      { text: "All of the above", correct: true }
     ]
   },
   {
@@ -201,19 +201,19 @@ var questions = [
   {
     question: 'How do you write "Hello World" in an alert box?',
     answers: [
-      { text: 'msg("Hello World");', correct: false },
+      { text: 'console.log("Hello World");', correct: false },
       { text: 'prompt("Hello World");', correct: false },
       { text: 'alertBox("Hello World");', correct: false },
       { text: 'alert("Hello World");', correct: true }
     ]
   },
   {
-    question: "How do you create a function in JavaScript?",
+    question: "Variables are defined by which term?",
     answers: [
-      { text: "function myFunction()", correct: true },
-      { text: "function = myFunction()", correct: false },
-      { text: "make.function.myFunction()", correct: false },
-      { text: "function:myFunction()", correct: false }
+      { text: "const", correct: false },
+      { text: "var", correct: false },
+      { text: "let", correct: false },
+      { text: "Any of these", correct: true }
     ]
   },
   {
@@ -235,7 +235,7 @@ var questions = [
     ]
   },
   {
-    question: "!= means what in javascript?",
+    question: "!= means what in JavaScript?",
     answers: [
       { text: "Or", correct: false },
       { text: "And", correct: false },
@@ -251,5 +251,13 @@ var questions = [
       { text: "[ ]", correct: true },
       { text: "# #", correct: false }
     ]
-  }
+  },
+
+    {
+        question: "When baristas write names on cups, this is known as JavaScript in coffee lingo.",
+        answers: [
+        { text: "True", correct: false },
+        { text: "False", correct: true }
+        ]
+    },
 ];
