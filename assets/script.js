@@ -1,12 +1,12 @@
 
 //Variables = qNumber(null), timer(num), score(num), initials(text)
-let timer = 90;
+let timer = 60;
 let runningTimer;
 let score = 0;
 let username = "";
 let qNumber;
 let finalScore;
-var MAX_HIGH_SCORES = 7;
+var MAX_HIGH_SCORES = 10;
 
 //DOM Objects = START BUTTON, ANSWER BUTTONS, QUESTION CONTAINER, QUESTION ELEMENT
 var startButton = document.getElementById("startButton");
@@ -142,7 +142,7 @@ function submitScores(e) {
 }
 
 //function to display high scores
-//should populate the HTML with a ranked display of the high scores and and provide the option to clear the scores via a function
+//should populate the HTML with a ranked display of the top 10 high scores and and provide the option to clear the scores via a function
 function displayScores() {
   clearInterval(runningTimer);
   countdown.innerHTML = "";
@@ -150,7 +150,7 @@ function displayScores() {
   qElement.innerText = "";
   scoreArea.classList.remove("hide");
 
-  scoreArea.innerHTML = `<h2>High Scores</h2><ul id="highScoresList"></ul><button id="clearScores" class="btn" onclick="clearScores()">Clear Scores</button>`;
+  scoreArea.innerHTML = `<h2>Top 10 High Scores</h2><ul id="highScoresList"></ul><button id="clearScores" class="btn" onclick="clearScores()">Clear Scores</button>`;
   var highScoresList = document.getElementById("highScoresList");
   highScoresList.innerHTML = highScores
     .map(score => {
@@ -182,6 +182,7 @@ var questions = [
       { text: "jQuery", correct: false }
     ]
   },
+
   {
     question: "Where is the correct place to insert JavaScript?",
     answers: [
@@ -191,13 +192,7 @@ var questions = [
       { text: "All of the above", correct: true }
     ]
   },
-  {
-    question: "The external JavaScript file must contain the script tag.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true }
-    ]
-  },
+
   {
     question: 'How do you write "Hello World" in an alert box?',
     answers: [
@@ -207,8 +202,10 @@ var questions = [
       { text: 'alert("Hello World");', correct: true }
     ]
   },
+
+
   {
-    question: "Variables are defined by which term?",
+    question: "Variables are declared by which keyword?",
     answers: [
       { text: "const", correct: false },
       { text: "var", correct: false },
@@ -216,8 +213,20 @@ var questions = [
       { text: "Any of these", correct: true }
     ]
   },
+
   {
-    question: 'How do you call a function named "myFunction"?',
+    question: "The syntax 'let variableName = value;' does what?",
+    answers: [
+      { text: "Declares the variable", correct: false },
+      { text: "Initializes the variable", correct: false },
+      { text: "Does both", correct: true },
+      { text: "Does neither", correct: false }
+    ]
+  },
+
+
+  {
+    question: 'How do you call a Function named "myFunction"?',
     answers: [
       { text: "call myFunction()", correct: false },
       { text: "read myFunction()", correct: false },
@@ -225,8 +234,9 @@ var questions = [
       { text: "run.myFunction()", correct: false }
     ]
   },
+
   {
-    question: "How do you write an IF statement in JavaScript?",
+    question: "How do you write an If statement in JavaScript?",
     answers: [
       { text: "if (i === 5)", correct: true },
       { text: "if i = 5 then", correct: false },
@@ -234,17 +244,19 @@ var questions = [
       { text: "if (i = 5)", correct: false }
     ]
   },
+
   {
-    question: "!= means what in JavaScript?",
+    question: "The != operator means what in JavaScript?",
     answers: [
       { text: "Or", correct: false },
-      { text: "And", correct: false },
-      { text: "Plus and Equal To", correct: false },
-      { text: "Not Equal To", correct: true }
+      { text: "Not equal to", correct: true },
+      { text: "Plus and equal to", correct: false },
+      { text: "And", correct: false }
     ]
   },
+
   {
-    question: "What Characters Contains an Array?",
+    question: "What characters contains an Array?",
     answers: [
       { text: "< >", correct: false },
       { text: "{ }", correct: false },
