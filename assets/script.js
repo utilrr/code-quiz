@@ -266,7 +266,7 @@ var questions = [
   },
 
     {
-        question: "When baristas write names on cups, this is known as JavaScript in coffee lingo.",
+        question: "When baristas write names on cups, this is known as JavaScript in coffee shop lingo.",
         answers: [
         { text: "True", correct: false },
         { text: "False", correct: true }
