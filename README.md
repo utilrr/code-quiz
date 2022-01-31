@@ -22,4 +22,12 @@ This week’s Challenge: Build a timed coding quiz with multiple-choice question
 
 ## (Screen shots here)
 
+![Screen Shot 2022-01-30 at 8 47 47 PM](https://user-images.githubusercontent.com/25494815/151732359-f7db50a3-b142-46b8-a1e3-afa101811f5a.png)
+
+![Screen Shot 2022-01-30 at 8 46 15 PM](https://user-images.githubusercontent.com/25494815/151732369-9c267c87-8b4c-4426-9678-9cf739473103.png)
+
+![Screen Shot 2022-01-30 at 8 45 57 PM](https://user-images.githubusercontent.com/25494815/151732375-18c50eeb-5b45-4d62-b011-c45db815abeb.png)
+
+![Screen Shot 2022-01-30 at 8 45 39 PM](https://user-images.githubusercontent.com/25494815/151732378-3d8d5e38-519e-4aa1-9c3d-6b3319268f60.png)
+
 ## (Links go here - live link & repo)
