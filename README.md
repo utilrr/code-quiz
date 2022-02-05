@@ -20,7 +20,7 @@ This week’s Challenge: Build a timed coding quiz with multiple-choice question
 6. Users can enter their name alongside their score in the Top 10 list, if they are one of the 10 best.
 
 
-## (Screen shots here)
+## Screen Shots
 
 ![Screen Shot 2022-01-30 at 8 47 47 PM](https://user-images.githubusercontent.com/25494815/151732359-f7db50a3-b142-46b8-a1e3-afa101811f5a.png)
 
@@ -30,4 +30,12 @@ This week’s Challenge: Build a timed coding quiz with multiple-choice question
 
 ![Screen Shot 2022-01-30 at 8 45 39 PM](https://user-images.githubusercontent.com/25494815/151732378-3d8d5e38-519e-4aa1-9c3d-6b3319268f60.png)
 
-## (Links go here - live link & repo)
+## Links - live link & repo
+
+### Deployed Webstite
+https://utilrr.github.io/code-quiz/
+
+### Repository
+https://github.com/utilrr/code-quiz/
+
+## Acessibility Report
